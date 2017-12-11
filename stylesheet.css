@@ -1,0 +1,348 @@
+/*Global
+**********/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* For mobile phones:
+----------------------*/
+/*Header container*/
+.header-container {
+    background: url("./images/header.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Header row 01 - Mobile*/
+.header-row {
+    color: white;
+    padding-bottom: 30px;
+}
+/*Left column (logo + articles) - Mobile*/
+.flex-header-left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left-col-img {
+    background-color: #071d35;
+}
+
+.header-left-col-articles {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 0 20px 0 20px;
+}
+
+.header-left-col-articles h1, .header-left-col-articles h2 {
+    font-weight: bold;
+}
+
+.header-left-col-articles h1 {
+    font-size: 42px;
+}
+
+.header-left-col-articles span {
+    color: #ffa810;
+}
+
+.header-left-col-articles p {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+/*Right column (form) - Mobile*/
+.header-right-col {
+    background-color: rgba(6, 29, 52, 0.55);
+    padding: 0 10px 10px 10px;
+}
+
+.header-right-col header {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+}
+
+.header-right-col label {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-right-col .checkbox-label {
+    font-weight: 300;
+}
+
+.checkbox-label a {
+    color: white;
+    text-decoration: underline;
+}
+
+#terms-and-conditions-text {
+    display: none;
+}
+
+.flex-header-col-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.header-right-col .btn {
+    font-weight: bold;
+    font-size: 23px;
+    color: black;
+    background-color: #ffa810;
+    height: 60px;
+}
+
+.flex-header-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header container, navigation row - Mobile*/
+.nav-arrow-row {
+    padding-bottom: 30px;
+}
+
+/*Middle container - Mobile*/
+.middle-container {
+    background: white url("./images/part-3_bg.jpg") repeat-x center;
+}
+
+.middle-container h1 {
+    font-size: 25px;
+    color: #061d34;
+}
+
+.middle-container h1>span {
+    font-weight: bold;
+}
+
+.middle-container p, .middle-container ul {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*middle container, daily rate row - Mobile*/
+.daily-rate-row {
+    padding: 20px 0 20px 0;
+}
+
+div.panel.daily-rate-panel {
+    max-height: 500px;
+}
+
+.daily-rate-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.daily-rate-text {
+    font-size: 20px;
+    padding: 20px;
+}
+
+/*middle container, row-01 - Mobile*/
+.middle-row-odd {
+    padding-top: 10px;
+}
+
+.middle-row-odd ul {
+    list-style-image: url("./images/yellow_bullet.jpg");
+}
+
+/*middle container, row-02 - Mobile*/
+.article-wrapper {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 10px;
+}
+
+.middle-row-even ul {
+    list-style-image: url("./images/blue_bullet.jpg");
+}
+
+/*middle container, row-03 - Mobile*/
+.task-img {
+    margin-top: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Bottom container (accordion) - Mobile*/
+.bottom-container {
+    background-color: #f6fbff;
+    padding-bottom: 70px;
+}
+
+.bottom-container h1 {
+    font-size: 30px;
+}
+
+.bottom-container h1>span {
+    font-weight: bold;
+}
+
+/*accordion - Mobile*/
+.accordion-wrapper {
+    width: 100%;
+}
+
+button.accordion {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #c5ecfd;
+    border: 1px solid #09bac6;
+    width: 100%;
+    min-height: 50px;
+    text-align: left;
+}
+
+.panel {
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    font-size: 16px;
+}
+
+/*Footer container - Mobile*/
+.footer-row {
+    background-color: #061d34;
+    color: white;
+    font-size: 10px;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+/* For tablets:
+-----------------*/
+@media only screen and (min-width: 768px) {
+    /*Header container - Tablet*/
+    /*header row 01 - Tablet*/
+    .header-row {
+        padding-bottom: 40px;
+    }
+    /*Left column (logo + articles) - Tablet*/
+    .flex-header-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-left-col-articles {
+        height: 452px;
+        min-width: 400px;
+    }
+
+    /*Right column (form) - Tablet*/
+    .flex-header-right-col {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-right-col {
+        min-width: 250px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .header-right-col .btn {
+        font-size: 29px;
+        width: 330px;
+        height: 60px;
+        margin: 20px 0 20px 0;
+    }
+
+    /*Header container, navigation row - Tablet*/
+    .nav-arrow-row {
+        padding-bottom: 40px;
+    }
+
+    /*Middle container - Tablet*/
+    .middle-container h1 {
+        font-size: 40px;
+    }
+
+    /*Bottom container (accordion) - Tablet*/
+    .bottom-container {
+        padding-top: 50px;
+    }
+
+    .bottom-container h1 {
+        font-size: 40px;
+    }
+
+    button.accordion {
+        font-size: 24px;
+        height: 50px;
+    }
+}
+
+/* For desktop:
+----------------*/
+@media only screen and (min-width: 1224px) {
+    /*Header container - Desktop*/
+    /*header row 01 - Desktop*/
+    .header-row {
+        padding-bottom: 80px;
+    }
+    /*Left column (logo + articles) - Desktop*/
+    .header-left-col-articles {
+        width: 445px;
+    }
+
+    /*Right column (form) - Desktop*/
+    .header-right-col {
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    /*Header container, navigation row - Desktop*/
+    .nav-arrow-row {
+        padding-bottom: 50px;
+    }
+
+    /*Middle container*/
+    /*Middle container, row-01 - Desktop*/
+    .middle-row-odd {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /*Middle container, row-02 - Desktop*/
+    .article-wrapper {
+        padding: 45px;
+    }
+
+    /*middle container, row-03 - Desktop */
+    .task-img {
+        margin-top: 20px;
+    }
+
+    /*Bottom container (accordion) - Desktop*/
+    .accordion-wrapper {
+        width: 920px;
+    }
+
+    /*Footer container - Desktop*/
+    .flex-footer {
+        height: 150px;
+        padding: 0;
+    }
+}

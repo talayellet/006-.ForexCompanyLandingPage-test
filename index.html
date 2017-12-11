@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Bitcoin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--project files-->
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+<!--Header container-->
+<div class="container-fluid header-container">
+    <!--header row-->
+    <div class="row header-row">
+        <div class="col-md-2"></div>
+        <!--Articles & logo column-->
+        <div class="col-xs-12 col-md-8">
+            <div class="flex-header-col">
+                <div class="flex-header-left-col">
+                    <div class="header-left-col-img">
+                        <a href="https://www.test.com?param=logo">
+                            <img class="img-responsive" src="./images/logo2.jpg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header-left-col-articles">
+                        <article>
+                            <h1>The Next <span>Bitcoin</span> Surge is Now</h1>
+                            <p>Remember when you got 2 Bitcoins to the Dollar? Now each Bitcoin is worth $4200</p>
+                        </article>
+                        <article>
+                            <h2>And It’s Getting Ready  to Take-Off Again!</h2>
+                            <p>Governments can’t stop them and Central Banks are adopting them.</p>
+                        </article>
+                    </div>
+                </div>
+                <!--form column-->
+                <div class="flex-header-right-col">
+                    <div class="header-right-col">
+                        <header class="text-center">Don’t get left behind again</header>
+                        <form id="trade-bitcoin-form" name="trade-bitcoin" action="https://www.test.com?param=true" method="post">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <div id="first-name-container" class="input-group">
+                                    <input id="firstName" class="form-control" type="text" aria-describedby="firstName" name="firstName" required onblur="fBlurHandler(this)">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <div id="last-name-container" class="input-group">
+                                    <input id="lastName" class="form-control" type="text" aria-describedby="lastName" name="lastName" required onblur="fBlurHandler(this)">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" id="email" type="email" name="email" required>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox-label"><input id="terms-and-conditions-checkbox" type="checkbox" name="terms"> I accept the <a href="#">Terms and conditions</a></label>
+                            </div>
+                            <div id="terms-and-conditions-text">some text</div>
+                            <div class="flex-header-col-btn">
+                                <button id="trade-bitcoin-btn" type="submit" class="btn">TRADE BITCOIN NOW</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row nav-arrow-row">
+        <div class="col-xs-12">
+            <img id="navArrowImg" class="img-responsive center-block" src="./images/arrow.png">
+        </div>
+    </div>
+</div>
+<!--Middle container (articles)-->
+<div class="container-fluid middle-container">
+    <!--daily rate row-->
+    <div class="row daily-rate-row text-center">
+        <div class="col-md-4"></div>
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default daily-rate-panel">
+                <div class="panel-heading daily-rate-header">Live Bitcoin Rate</div>
+                <div class="daily-rate-text" id="dailyRate" class="panel-body"></div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row middle-row-odd">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-4">
+            <article>
+                <h1>Invest in Bitcoin on a<br><span>LEADING PLATFORM</span></h1>
+                <p>
+                    PrimeCFD’s trading platform was created especially for Forex and CFD trading:
+                    it’s both easy to use and provides all the risk management tools to make your investment safer and smarter.
+                </p>
+                <ul>
+                    <li>1-Click Trading</li>
+                    <li>All market and limit orders available</li>
+                    <li>Wide range of technical indicators</li>
+                    <li>Instant execution, full transparency</li>
+                </ul>
+            </article>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <img class="img-responsive" src="./images/part-2_pc-tablet-cellphone.png" alt="pc-tablet-cellphone">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row middle-row-even">
+        <div class="col-md-5"></div>
+        <div class="col-xs-12 col-md-5">
+            <div class="article-wrapper">
+                <article>
+                    <h1><span>THE BEST ANALYSIS</span><br>in the business</h1>
+                    <p>
+                        At Prime CFDs your success is our success.
+                        The more you trade, the more we make.
+                        That’s why provide you with all the tools you need to keep you here longer and happier.
+                    </p>
+                    <ul>
+                        <li>Free signals from Trading Central</li>
+                        <li>Daily news & analysis</li>
+                        <li>Webinars where you can learn from and copy expert traders</li>
+                        <li>Comprehensive academy & eBook series</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row middle-row-odd">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-3">
+            <article>
+                <h1>Trade with a<br><span>REGULATED LEADER</span></h1>
+                <p>
+                    Online financial trading is coming of age.
+                    Any company that wants to succeed in the long run, realizes that “trust” is the name of the game.
+                </p>
+                <ul>
+                    <li>PrimeCFDs is a fully regulated investment services provider</li>
+                    <li>Your money is kept in separate fiduciary accounts in Tier-1 banks in the EU</li>
+                    <li>All your transactions and activities are governed by MiFID-approved security protocols</li>
+                </ul>
+            </article>
+        </div>
+        <div class="col-xs-12 col-md-3 task-img">
+            <img class="img-responsive center-block" src="./images/part-4_picture.jpg" alt="part-4_picture">
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+<!--Bottom container (accordion)-->
+<div class="container-fluid bottom-container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-8">
+            <h1 class="text-center">Discover <span>BITCOIN</span> Now</h1>
+            <div class="accordion-wrapper">
+                <button class="accordion"><ul><li>What is Bitcoin?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        Bitcoin is the first digital currency. It was invented by a group of software programmers and is completely decentralized,
+                        as opposed to paper money (fiat currencies) that are issued and controlled by a country’s central bank.
+                        Also, unlike paper currency, Bitcoins cannot be accumulated in any physical form,
+                        but rather are credited to their owners through a global online database, called a ledger.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>What is a Cryptocurrency?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        Cryptocurrencies, of which Bitcoin is one, are digital assets that can be used as trading commodities.
+                        They are decentralized, meaning that instead of being represented as a physical currency, their ‘location’ is denoted in a global online database.
+                        At present there are more than 1000 cryptocurrencies in use, including Bitcoin, Auroracoin, Ethereum, Litecoin, Peercoin, Zcash, and more.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>What can I do with Bitcoins?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        More and more businesses around the world are beginning to accept Bitcoin as legal tender.
+                        Many central banks now recognize Bitcoin, enabling official transactions and currency swaps.
+                        And the number of exchanges where Bitcoins can be purchased and/or sold is growing.
+                        In fact, Bitcoin transactions are easier than credit/debit card transactions, since it does not require merchant accounts and/or payment services.
+                        Sides to a transaction simply need a “wallet” – an app that is easily downloaded to your computer or mobile device.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>What is a ledger?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        A ledger is a book-keeping device for recording and totaling financial/economic exchanges.
+                        For digital currencies, a shared (distributed) ledger is a series of online recordings of currency ownership and transactions.
+                        These are also being adopted by banks to reduce risk and save expenditure.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>What is Blockchain?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        The digital currency environment relies for its existence and orderly conduct upon a chain of blocks.
+                        Each block in the chain records transactions. The Blockchain is maintained by a peer-to-peer computer network in which blocks validate one another.
+                        However, blockchains may also be used for other records management tasks, such as the medical files and other events-based environments.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>What is Forex trading?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        Forex Trading, or Foreign Exchange trading entails investing in and exchanging currencies.
+                        From tourists exchanging money at a MoneyChanger to countries engaged in international trade,
+                        the market for the daily exchange of types of money accounts for about $5 trillion of transactions daily!
+                        Forex trading is also one of the most popular venues in online retail investments,
+                        as it enables private individuals to participate in global markets for affordable fees and with little training.
+                    </p>
+                </div>
+
+                <button class="accordion"><ul><li>Why trade Bitcoin instead of buying?</li></ul></button>
+                <div class="panel">
+                    <p>
+                        Investing in Bitcoins on the Forex market entails investing in Forex pairs where Bitcoin is either the main or counter currency.
+                        Whereas when buying or selling bitcoins one is obligated to actually purchase Bitcoins (which – at $4200 each – are already quite expensive),
+                        in Forex trading, the entry bar is much lower (as low as $5 per trade).
+                        Moreover, Forex brokers will usually leverage* your investment, i.e. invest alongside you to increase the value of your investment.
+                        And finally, since we are investing in contracts to buy/sell that need never be fulfilled,
+                        the investor can invest in the Bitcoin’s losing value (“shorting”) as well as its accruing value (going “long”).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<!--Footer container-->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="row footer-row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8">
+                <div class="flex-footer">
+                    <span class="text-center">
+                    CFD trading may not be suitable for all traders. Make sure you are well-versed in financial markets and how they behave.
+                    CFDs are a leveraged product and may result in losses that exceed your initial deposit.
+                    Make sure you have read our terms and understand the risk.
+                    PrimeCFDs is not an investment adviser and cannot be held responsible for the actions of its investors, who act at their sole discretion.
+                    PrimeCFDs is a subsidiary of Orion Service EOOD, an investment services company located at 39 Aleko Konstantinov St. Sofia ,Bulgaria. 359 884227598
+                </span>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
